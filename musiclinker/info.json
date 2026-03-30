@@ -1,0 +1,21 @@
+{
+    "author": ["Shadow6six using AI"],
+    "install_msg": "MusicLinker has been installed!\n\nIt now automatically detects Spotify track and YouTube music/video links in messages and can reply with cross-platform search links (YouTube ↔ Spotify ↔ Tidal ↔ Amazon Music) + Brave lyrics search.\n\n**Default: disabled per server**\n\nEnable and configure with:\n`[p]ml`  or  `[p]musiclinker`    ← shows settings\n`[p]ml toggle`               ← enable/disable\n`[p]ml channel #music`       ← restrict to a channel\n`[p]ml react`                ← toggle reaction mode (🎵)\n\nFor better Spotify metadata (artist + album), set API credentials:\n`[p]ml spotifyapi <client_id> <client_secret>`\n(Recommended to run this in DMs for privacy)",
+    "name": "MusicLinker",
+    "short": "Converts music links between platforms + lyrics search",
+    "description": "Detects Spotify track links and YouTube (including music.youtube.com) links in messages.\n\nFeatures:\n• Cross-platform search links: YouTube / YouTube Music ↔ Spotify ↔ Tidal ↔ Amazon Music\n• Brave Search lyrics link\n• Two modes: auto-reply or 🎵 reaction mode (any user can click to reveal links)\n• Channel whitelist / all channels option\n• Optional Spotify Web API integration for full artist, album & track name data\n• Thumbnail display toggle\n• Max embeds per message limit\n\nDisabled by default per server — must be explicitly enabled.",
+    "tags": [
+        "music",
+        "spotify",
+        "youtube",
+        "tidal",
+        "amazon-music",
+        "lyrics",
+        "brave-search",
+        "link-converter",
+        "reaction-mode"
+    ],
+    "requirements": [],
+    "min_bot_version": "3.5.0",
+    "end_user_data_statement": "This cog does not persistently store any end-user data. It processes message content in real-time to detect music links and only stores server-specific settings (enabled state, channel restriction, reaction mode, etc.) and globally-stored Spotify API credentials (if set by the bot owner)."
+}

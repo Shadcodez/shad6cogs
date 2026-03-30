@@ -1,0 +1,8 @@
+{
+    "author": ["Grok"],
+    "name": "ExcelEvents",
+    "description": "Create, update, and delete Discord Scheduled Events by uploading an Excel (.xlsx) sheet.",
+    "short": "Excel → Discord Events",
+    "requirements": ["openpyxl"],
+    "end_user_data_statement": "This cog stores the uploaded Excel file and event-to-key mappings locally in its data folder. No personal user data is stored."
+}

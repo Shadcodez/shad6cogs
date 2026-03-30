@@ -1,0 +1,12 @@
+{
+    "author": ["Shadcodez"],
+    "install_msg": "PixelArt cog installed! Use `[p]pixel` with an image to create pixel art.",
+    "name": "pixelart",
+    "short": "Convert images to pixel art with customizable styles and palettes.",
+    "description": "A cog that converts images to pixel art. Attach an image, provide a URL, or reply to an image message, then tweak scale, palette, and grayscale interactively.",
+    "tags": ["image", "pixel", "art", "fun"],
+    "requirements": ["pillow"],
+    "end_user_data_statement": "This cog does not store any end user data.",
+    "min_bot_version": "3.5.0",
+    "min_python_version": [3, 9, 0]
+}
