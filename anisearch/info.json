@@ -1,0 +1,7 @@
+{
+  "author": ["shad updating lionirdeadman lionirdeadman's code for 2026 red"],
+  "short": "Anime, manga, character and user search (Anilist + MyAnimeList)",
+  "description": "Search for anime, manga, characters, and users on Anilist.co and MyAnimeList (via Jikan). Hybrid commands, rich embeds with genres/studios, and reaction navigation.",
+  "requirements": [],
+  "min_python_version": [3, 8, 0]
+}
