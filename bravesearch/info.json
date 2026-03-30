@@ -1,7 +1,11 @@
 {
   "author": ["Shadow6six"],
-  "short": "Brave Search with optional AI answers",
-  "description": "Web search using Brave Search. Can be configured for AI-powered answers (requires Brave API key). Includes follow-up questions and server-specific settings.",
+  "name": "bravesearch",
+  "short": "Brave Search + optional AI Answers integration",
+  "description": "Type `[p]bravesearch` for help or `[p]bravesearch <query>` to search the web. Provides fast Brave web results and optional AI-powered answers using the Brave API.",
+  "tags": ["search", "web", "brave", "ai", "internet"],
   "requirements": [],
-  "min_python_version": [3, 8, 0]
+  "install_msg": "BraveSearch installed!\n\nThis cog uses the Brave Search API[](https://search.brave.com/). \n\n• Web search works without a key.\n• AI Answers require a free Brave API key (set with `[p]bravesearch setkey`).",
+  "end_user_data_statement": "No user data is stored beyond guild configuration and temporary in-memory conversation history for AI answers.",
+  "min_bot_version": "3.5.0"
 }
