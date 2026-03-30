@@ -1,8 +1,0 @@
-{
-  "author": "Grok (with Shadcodez/Kreusada inspiration)",
-  "description": "Import Excel → rich embeds with images, buttons, dropdowns, role/channel mentions, and optional DM reminders via reactions.",
-  "short": "Excel → Rich Embeds",
-  "tags": ["embed", "excel", "events", "reminders"],
-  "end_user_data_statement": "Stores only reminder opt-ins per-guild (no personal data beyond Discord IDs).",
-  "permissions": ["Manage Messages"]
-}
