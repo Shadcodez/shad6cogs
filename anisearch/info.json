@@ -1,7 +1,11 @@
 {
   "author": ["lionirdeadman's code + edits"],
-  "short": "Anime, manga, character and user search (Anilist + MyAnimeList)",
-  "description": "Search for anime, manga, characters, and users on Anilist.co and MyAnimeList (via Jikan). Hybrid commands, rich embeds with genres/studios, and reaction navigation.",
+  "name": "anisearch",
+  "short": "Search for anime, manga, characters and users using Anilist + direct MyAnimeList (Jikan v4) support.",
+  "description": "Modern 2026 Redbot updates:\n• Hybrid commands (prefix + slash support)\n• Persistent aiohttp session (better performance)\n• Added genres + studios to Anilist embeds\n• Direct MAL search via Jikan (full compatibility with both sites)\n• Fixed spoiler regex, better error handling, cleaner code\n• Backward-compatible reaction menu (still works perfectly in 2026)",
+  "tags": ["anime", "manga", "anilist", "myanimelist", "search"],
   "requirements": [],
-  "min_python_version": [3, 8, 0]
+  "install_msg": "AniSearch installed!\n\nThis cog uses the free Anilist GraphQL API and Jikan (MyAnimeList) API. No API keys are required.",
+  "end_user_data_statement": "This cog fetches data from Anilist and MyAnimeList (Jikan API) and displays it in Discord embeds. No user data is stored or processed beyond search queries.",
+  "min_bot_version": "3.5.0"
 }
