@@ -1,0 +1,7 @@
+{
+  "author": ["Shadow6six"],
+  "short": "Brave Search with optional AI answers",
+  "description": "Web search using Brave Search. Can be configured for AI-powered answers (requires Brave API key). Includes follow-up questions and server-specific settings.",
+  "requirements": [],
+  "min_python_version": [3, 8, 0]
+}
