@@ -1,5 +1,5 @@
 {
-    "author": ["Shad + Grok + claude 4.2"],
+    "author": ["Shadow6six"],
     "name": "ExcelEvents",
     "description": "Create, update, and delete Discord Scheduled Events by uploading an Excel (.xlsx) sheet.",
     "short": "Excel → Discord Events",
