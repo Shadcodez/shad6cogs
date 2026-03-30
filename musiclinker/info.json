@@ -1,5 +1,5 @@
 {
-    "author": ["Shadow6six using AI"],
+    "author": ["Shadow6six"],
     "install_msg": "MusicLinker has been installed!\n\nIt now automatically detects Spotify track and YouTube music/video links in messages and can reply with cross-platform search links (YouTube ↔ Spotify ↔ Tidal ↔ Amazon Music) + Brave lyrics search.\n\n**Default: disabled per server**\n\nEnable and configure with:\n`[p]ml`  or  `[p]musiclinker`    ← shows settings\n`[p]ml toggle`               ← enable/disable\n`[p]ml channel #music`       ← restrict to a channel\n`[p]ml react`                ← toggle reaction mode (🎵)\n\nFor better Spotify metadata (artist + album), set API credentials:\n`[p]ml spotifyapi <client_id> <client_secret>`\n(Recommended to run this in DMs for privacy)",
     "name": "MusicLinker",
     "short": "Converts music links between platforms + lyrics search",
