@@ -18,12 +18,12 @@ class Fu(commands.Cog):
     """Sends a random "FU" ASCII art to a user via DM."""
 
     __author__ = "Shad6cogs style (Grok assisted)"
-    __version__ = "1.0.0"
+    __version__ = "1.0.1"
 
     def __init__(self, bot: Red):
         self.bot = bot
 
-        # All the ASCII arts you provided (preserved exactly)
+        # All ASCII arts you provided (preserved exactly)
         self.ascii_arts = [
             """....................../´¯/) 
 ....................,/¯../ 
@@ -191,5 +191,4 @@ class Fu(commands.Cog):
             await ctx.send(f"⏳ Chill, wait {error.retry_after:.1f} seconds.", delete_after=8)
 
 
-def setup(bot: Red):
-    bot.add_cog(Fu(bot))
+# ←←←←←←←←←←←←←←←←←← NO setup() function here! It belongs only in __init__.py
