@@ -1,4 +1,4 @@
 from .fu import Fu
 
-def setup(bot):
-    bot.add_cog(Fu(bot))
+async def setup(bot):
+    await bot.add_cog(Fu(bot))
