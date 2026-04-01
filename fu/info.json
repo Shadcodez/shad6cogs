@@ -1,0 +1,9 @@
+{
+    "author": ["SHADOW6six"],
+    "name": "FU",
+    "short": "DM users a random FU ASCII art",
+    "description": "Type [p]fu @user or [p]fu <userid> to send them a special middle-finger message via DM with a random ASCII art attached as a .txt file.",
+    "version": "1.0.0",
+    "tags": ["fun", "meme", "troll"],
+    "hidden": false
+}
