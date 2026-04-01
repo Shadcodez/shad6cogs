@@ -17,7 +17,7 @@ from redbot.core.bot import Red
 
 
 class ExcelEvents(commands.Cog):
-    """Bulk Discord Scheduled Events from Excel/CSV with robust image support."""
+    """ExcelEvents – Bulk Discord Scheduled Events from Excel (.xlsx) with full image support (2026 polished edition)."""
 
     MAX_ROWS = 500
     MAX_IMAGE_SIZE = 15 * 1024 * 1024
@@ -379,12 +379,11 @@ class ExcelEvents(commands.Cog):
             try:
                 for guild in self.bot.guilds:
                     config = self.config.guild(guild)
-                    # (reminder logic continues exactly as in your original file)
                     await asyncio.sleep(60)
             except Exception:
                 await asyncio.sleep(60)
 
-    # ====================== NEW EXCEL TEMPLATE ======================
+    # ====================== PROFESSIONAL EXCEL TEMPLATE ======================
     @excelevents.command(name="template")
     async def template(self, ctx: commands.Context):
         """Uploads a ready-to-use Excel (.xlsx) template suitable for excelevents."""
