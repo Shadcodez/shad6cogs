@@ -1,4 +1,4 @@
-JSON{
+{
   "author": ["Shadow6six"],
   "name": "ExcelEvents",
   "description": "Create, update, and delete Discord Scheduled Events in bulk by uploading an Excel (.xlsx) sheet. Includes a polished template command, full image support, validation, and CSV fallback.",
