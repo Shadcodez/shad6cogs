@@ -1,8 +1,11 @@
-{
-    "author": ["Shadow6six"],
-    "name": "ExcelEvents",
-    "description": "Create, update, and delete Discord Scheduled Events by uploading an Excel (.xlsx) sheet.",
-    "short": "Excel → Discord Events",
-    "requirements": ["openpyxl"],
-    "end_user_data_statement": "This cog stores the uploaded Excel file and event-to-key mappings locally in its data folder. No personal user data is stored."
+JSON{
+  "author": ["Shadow6six"],
+  "name": "ExcelEvents",
+  "description": "Create, update, and delete Discord Scheduled Events in bulk by uploading an Excel (.xlsx) sheet. Includes a polished template command, full image support, validation, and CSV fallback.",
+  "short": "Excel → Discord Scheduled Events",
+  "tags": ["events", "excel", "scheduled", "bulk", "template"],
+  "version": "2026.3",
+  "requirements": ["openpyxl"],
+  "permissions": ["Manage Events"],
+  "end_user_data_statement": "This cog stores the uploaded Excel file and event-to-key mappings locally in its data folder. No personal user data is stored."
 }
