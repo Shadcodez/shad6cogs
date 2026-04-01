@@ -189,6 +189,3 @@ class Fu(commands.Cog):
         """Silence cooldown spam."""
         if isinstance(error, commands.CommandOnCooldown):
             await ctx.send(f"⏳ Chill, wait {error.retry_after:.1f} seconds.", delete_after=8)
-
-
-# ←←←←←←←←←←←←←←←←←← NO setup() function here! It belongs only in __init__.py
