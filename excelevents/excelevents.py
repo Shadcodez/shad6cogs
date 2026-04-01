@@ -383,6 +383,16 @@ class ExcelEvents(commands.Cog):
             except Exception:
                 await asyncio.sleep(60)
 
+    # ====================== MAIN COMMAND GROUP ======================
+    @commands.group(invoke_without_command=True)
+    async def excelevents(self, ctx: commands.Context):
+        """Bulk manage Discord Scheduled Events using Excel files.
+        
+        Use ,excelevents template to get the Excel template.
+        """
+        if ctx.invoked_subcommand is None:
+            await ctx.send_help(ctx.command)
+
     # ====================== PROFESSIONAL EXCEL TEMPLATE ======================
     @excelevents.command(name="template")
     async def template(self, ctx: commands.Context):
@@ -391,7 +401,6 @@ class ExcelEvents(commands.Cog):
         ws = wb.active
         ws.title = "Events"
 
-        # Headers (matches the cog's column parser)
         headers = ["name", "start", "end", "description", "type", "location", "channelid", "image"]
 
         header_fill = PatternFill(start_color="366092", end_color="366092", fill_type="solid")
@@ -403,7 +412,6 @@ class ExcelEvents(commands.Cog):
             cell.font = header_font
             ws.column_dimensions[get_column_letter(col)].width = 25
 
-        # Example row
         example = [
             "Example Movie Night",
             "2026-04-05 20:00",
@@ -411,14 +419,13 @@ class ExcelEvents(commands.Cog):
             "Join us for a movie night in voice chat! Popcorn not included 🍿",
             "voice",
             "",
-            "123456789012345678",   # ← replace with your actual voice/stage channel ID
+            "123456789012345678",
             "https://i.imgur.com/3eQczTs.jpg"
         ]
 
         for col, value in enumerate(example, 1):
             ws.cell(row=2, column=col, value=value)
 
-        # Instructions sheet
         ws2 = wb.create_sheet("README")
         ws2['A1'] = "Excelevents Excel Template – How to use"
         ws2['A1'].font = Font(bold=True, size=14)
@@ -437,7 +444,6 @@ class ExcelEvents(commands.Cog):
             ws2[f'A{i}'] = num
             ws2[f'B{i}'] = text
 
-        # Save to memory and send
         buffer = io.BytesIO()
         wb.save(buffer)
         buffer.seek(0)
@@ -629,7 +635,6 @@ class ExcelEvents(commands.Cog):
                 else:
                     await ctx.send(f"Failed to create event: {name}")
 
-            # Cleanup
             deleted = 0
             for old_key, old_id in list(mappings.items()):
                 if old_key not in active_keys:
