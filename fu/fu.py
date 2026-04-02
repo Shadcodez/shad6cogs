@@ -155,7 +155,7 @@ class Fu(commands.Cog):
         """Nothing to delete."""
         pass
 
-    @commands.command(name="fu", aliases=["fuckyou", "middlefinger"])
+    @commands.command(name="fu", aliases=["xoxo"])
     @commands.cooldown(1, 10, commands.BucketType.user)
     @commands.guild_only()
     async def fu(self, ctx: commands.Context, *, user: discord.User):
